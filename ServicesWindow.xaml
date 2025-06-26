@@ -1,0 +1,28 @@
+<Window x:Class="Vet_Clinic.ServicesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Послуги" Height="400" Width="423"
+        WindowStartupLocation="CenterScreen"
+        Background="#f0f0f0">
+    <Border Margin="0,10,0,-44" Padding="20" Background="White" CornerRadius="8"
+            BorderBrush="#ccc" BorderThickness="1">
+        <StackPanel Margin="-21,1,-14,29">
+            <TextBlock Text=" Ветеринарні послуги" FontSize="20" FontWeight="Bold"
+                       Margin="0,0,0,20" HorizontalAlignment="Center" Foreground="#2c3e50"/>
+            <ListBox x:Name="ServicesList" FontSize="14">
+                <ListBoxItem Content=" Загальний огляд — 300 грн"/>
+                <ListBoxItem Content=" Вакцинація — 450 грн"/>
+                <ListBoxItem Content=" Чистка зубів — 500 грн"/>
+                <ListBoxItem Content=" Аналіз крові — 400 грн"/>
+                <ListBoxItem Content=" Рентген — 600 грн"/>
+                <ListBoxItem Content="Стрижка — 250 грн"/>
+                <ListBoxItem Content=" Стаціонар — 900 грн/день"/>
+                <ListBoxItem Content=" Операція (мала) — від 1500 грн"/>
+                <ListBoxItem Content=" Виклик лікаря додому — 1000 грн"/>
+            </ListBox>
+            <Button Content="Закрити" Height="35" Margin="0,20,0,0" Width="100"
+                    Click="CloseButton_Click" Background="#c0392b" Foreground="White"
+                    FontWeight="Bold" HorizontalAlignment="Center"/>
+        </StackPanel>
+    </Border>
+</Window>
